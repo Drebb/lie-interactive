@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/output.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/163c42e496.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>LIE Activity</title>
+    <style>
+      *::-webkit-scrollbar {
+        display: none;
+      }
+
+      html {
+    scroll-behavior: smooth;
+    }
+
+    </style>
+  </head>
+  <body>
+
+    <audio id="background-music" autoplay loop hidden>
+        <source src="apple.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <button
+      id="muteButtond"
+      class="z-10 fixed bottom-4 right-4 inline-flex items-center px-4 py-2 font-medium text-white bg-gray-900 rounded-full shadow-lg transition duration-300 hover:bg-gray-800"
+      onclick="toggleAudio()"
+    >
+      <span id="muteText">Mute</span> <i class="fa-solid fa-volume-xmark ml-2"></i>
+    </button>
+    
+
+    
+    <div
+      class="fixed top-0 w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out"
+    >
+      <div
+        class="flex flex-col max-w-6xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8"
+      >
+        <div class="flex flex-row items-center justify-between p-4">
+          <a
+            href="#"
+            class="text-lg font-semibold rounded-lg tracking-widest focus:outline-none focus:shadow-outline"
+          >
+            <h1
+              class="text-4xl Avenir tracking-tighter text-gray-900 md:text-4xl lg:text-3xl"
+            >
+              iPhone <i class="fa-solid fa-apple-whole"></i>
+            </h1>
+          </a>
+        </div>
+        <nav class="md:flex flex-grow items-center hidden">
+          <ul class="flex flex-grow justify-end flex-wrap items-center">
+            <li>
+              <a
+                href="#about"
+                class="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-flex items-center px-4 py-2 mt-2 font-medium text-white transition duration-500 ease-in-out transform rounded-lg text-md md:mt-0 md:ml-4 bg-gray-900"
+                href="#prices"
+              >
+                <span class="justify-center">Buy Now <i class="fa-solid fa-cart-shopping"></i></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="text-gray-600 body-font">
+      <div
+        class="max-w-7xl mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+      >
+        <div
+          class="lg:flex-grow md:w-1/2 md:ml-24 pt-6 flex flex-col md:items-start md:text-left mb-40 items-center text-center"
+        >
+          <h1
+            class="mb-3 sm:text-4xl text-3xl items-center Avenir xl:w-2/2 text-gray-900"
+          >
+            iPhone 45
+          </h1>
+          <h1
+            class="mb-5 sm:text-6xl text-5xl items-center Avenir xl:w-2/2 text-gray-900 font-bold"
+          >
+            Visionary Intelligence
+          </h1>
+          <p class="mb-4 xl:w-3/4 text-gray-600 text-lg">
+            Experience cutting-edge technology with the iPhone 45, designed to
+            enhance your digital lifestyle and deliver unparalleled performance. <br><br> <span class="font-bold">Developed by Drandreb B. Reyes<br>Section: BCGV1</span>
+          </p>
+          <div class="flex justify-center">
+            <a
+              class="inline-flex items-center px-5 py-3 mt-2 font-medium text-white transition duration-500 ease-in-out transform border rounded-lg bg-gray-900"
+              href="#video-section"
+              >Find out more</a
+            >
+          </div>
+        </div>
+        <div class="md:w-1/2 w-full">
+          <iframe
+            id="spline-iframe"
+            src="https://my.spline.design/iphoneprocopy-b283e29fb0ec2dcd1d2207362e34931d/"
+            frameborder="0"
+            width="100%"
+            height="700px"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="py-12">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="mb-8 p-6">
+          <p
+            class="text-gray-500 text-3xl font-bold text-center leading-relaxed p-4"
+          >
+            Discover the cutting-edge features and innovative design of our
+            latest product.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300"
+          >
+            <h3 class="text-xl font-semibold text-gray-900">
+              <i class="fa-solid fa-mobile-screen-button"></i> Super Retina XDR
+              Display
+            </h3>
+            <p class="text-gray-600">
+              Experience stunning visuals with vibrant colors and deep blacks on
+              a 6.1-inch display, perfect for immersive gaming and streaming.
+            </p>
+          </div>
+          <div
+            class="p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300"
+          >
+            <h3 class="text-xl font-semibold text-gray-900">
+              <i class="fa-solid fa-microchip"></i> A50 Bionic Chip
+            </h3>
+            <p class="text-gray-600">
+              Powered by the A50 Bionic chip, enjoy lightning-fast performance
+              for gaming, photography, and multitasking without lag.
+            </p>
+          </div>
+          <div
+            class="p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300"
+          >
+            <h3 class="text-xl font-semibold text-gray-900">
+              <i class="fa-solid fa-camera"></i> Advanced Camera System
+            </h3>
+            <p class="text-gray-600">
+              Capture stunning photos and videos with a triple-camera system,
+              including Night mode, Deep Fusion, and 12K Dolby Vision recording.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="video-section" class="py-20">
+        <div class="max-w-7xl mx-auto text-center">
+          <h1 class="mb-4 text-3xl font-semibold text-gray-600">HDR Video</h1>
+          <h2 class="mb-6 text-6xl font-bold text-gray-900">Dynamic by Default</h2>
+          <p class="mb-8 text-lg text-gray-700 leading-relaxed">
+            Experience the vibrant colors and rich details of HDR video, designed to
+            elevate your viewing experience to new heights.
+          </p>
+      
+          <div
+            class="relative flex flex-col items-center justify-center mx-auto rounded-lg shadow-lg overflow-hidden p-6 bg-white max-w-5xl"
+          >
+            <video id="video" class="w-full h-auto rounded-lg" poster="AppleThumbnail.jpg">
+              <source src="IphoneVid.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <button
+              id="playButton"
+              class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black text-white text-lg font-bold py-2 px-6 rounded-full shadow-lg transition duration-300 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-400"
+            >
+              Watch Video <i class="fa-solid fa-circle-play"></i>
+            </button>
+            <div
+              id="controls"
+              class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex items-center space-x-4 bg-gray-800 bg-opacity-75 p-2 rounded-full shadow-lg transition-opacity duration-300 opacity-0"
+            >
+              <button
+                id="playPauseButton"
+                class="bg-gray-900 text-white rounded-full w-12 h-12 shadow-md hover:bg-gray-700 transition duration-300 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-pause"></i>
+              </button>
+              <button
+                id="muteButton"
+                class="bg-gray-900 text-white rounded-full w-12 h-12 shadow-md hover:bg-gray-700 transition duration-300 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-volume-up"></i>
+              </button>
+              <input
+                type="range"
+                id="volumeControl"
+                min="0"
+                max="1"
+                step="0.1"
+                class="w-32 bg-gray-300 rounded-lg cursor-pointer"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    <section class="py-20 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="mb-6 text-6xl font-bold text-gray-900">Great Specifications</h2>
+            <h1 class="mb-4 text-2xl font-semibold text-gray-600">Discover Our Innovative Features</h1>
+        </div>
+    
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mx-auto">
+            <div class="p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl font-semibold text-gray-900"><i class="fa-solid fa-battery-full"></i> Battery Life</h3>
+                <p class="text-gray-600">Up to 20 hours of talk time.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl font-semibold text-gray-900"><i class="fa-solid fa-hard-drive"></i> Storage Options</h3>
+                <p class="text-gray-600">Available in 128GB, 256GB, and 512GB.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl font-semibold text-gray-900"><i class="fa-solid fa-umbrella"></i> Water Resistance</h3>
+                <p class="text-gray-600">IP68 rated for dust and water resistance.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl font-semibold text-gray-900"><i class="fa-solid fa-palette"></i> Color Options</h3>
+                <p class="text-gray-600">Available in Black, Silver, and Gold.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl font-semibold text-gray-900"><i class="fa-solid fa-id-badge"></i> Face ID</h3>
+                <p class="text-gray-600">Secure facial recognition technology.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl font-semibold text-gray-900"><i class="fa-solid fa-rss"></i> 5G Connectivity</h3>
+                <p class="text-gray-600">Experience lightning-fast internet speeds.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+            <div class="py-24 md:py-36">
+                <h1 class="mb-5 text-6xl Avenir font-semibold text-gray-900">
+                    iPhone 45
+                </h1>
+                <h2 class="mb-9 text-3xl font-semibold text-gray-600">
+                    Visionary Intelligence
+                </h2>
+                <p class="mb-8 text-lg text-gray-500">
+                    Experience cutting-edge technology designed to enhance your digital lifestyle.
+                </p>
+    
+                <div  id="prices" class="md:w-1/2 w-full mx-auto mb-8">
+                    <iframe
+                        id="spline-iframe"
+                        src="https://my.spline.design/iphoneprocopy-b283e29fb0ec2dcd1d2207362e34931d/"
+                        frameborder="0"
+                        width="100%"
+                        height="700px"
+                        class="rounded-lg"
+                    ></iframe>
+                </div>
+
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+                    <h2 class="mb-8 text-4xl font-semibold text-gray-900">Pricing Options</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-white shadow-lg rounded-lg p-6">
+                            <h3 class="text-2xl font-bold text-gray-900">Standard</h3>
+                            <p class="mt-2 text-lg text-gray-600">Perfect for everyday use.</p>
+                            <p class="mt-4 text-3xl font-bold text-gray-900">₱150,000</p>
+                            <a
+                                class="inline-flex items-center px-6 py-2 mt-4 font-medium text-white bg-gray-900 rounded-lg transition duration-300 hover:bg-gray-800"
+                                href="#prices"
+                                >Get Iphone 45-S</a
+                            >
+                        </div>
+            
+                        <div class="bg-white shadow-lg rounded-lg p-6">
+                            <h3 class="text-2xl font-bold text-gray-900">Premium</h3>
+                            <p class="mt-2 text-lg text-gray-600">For the tech enthusiast.</p>
+                            <p class="mt-4 text-3xl font-bold text-gray-900">₱175,000</p>
+                            <a
+                                class="inline-flex items-center px-6 py-2 mt-4 font-medium text-white bg-gray-900 rounded-lg transition duration-300 hover:bg-gray-800"
+                                href="#prices"
+                                >Get Iphone 45 Pro</a
+                            >
+                        </div>
+            
+                        <div class="bg-white shadow-lg rounded-lg p-6">
+                            <h3 class="text-2xl font-bold text-gray-900">Ultimate</h3>
+                            <p class="mt-2 text-lg text-gray-600">The best features and support.</p>
+                            <p class="mt-4 text-3xl font-bold text-gray-900">₱200,000</p>
+                            <a
+                                class="inline-flex items-center px-6 py-2 mt-4 font-medium text-white bg-gray-900 rounded-lg transition duration-300 hover:bg-gray-800"
+                                href="#prices"
+                                >Get Iphone 45 Ultima</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mx-auto py-10"></section>
+        <div class="container px-5 mx-auto lg:px-24">
+            <div class="flex flex-col w-full mb-8 text-left lg:text-center">
+                <h1 class="mb-4 text-3xl font-bold text-black">
+                    Checkout Our Different Products
+                </h1>
+                <p class="mb-6 text-lg text-gray-600">
+                    Explore our latest offerings designed to elevate your experience.
+                </p>
+            </div>
+    
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <iframe src='https://my.spline.design/applewatchcopy-d7fcb84be4df1f09f90389edf27b269e/' class="w-full h-64 rounded-t-lg" frameborder='0'></iframe>
+                    <div class="p-4">
+                        <h3 class="mt-4 text-xl font-semibold text-gray-900">Apple Watch</h3>
+                        <p class="mt-2 text-gray-500">Stay connected and track your fitness goals.</p>
+                    </div>
+                </div>
+    
+                <div class="text-center bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <iframe src="https://my.spline.design/nintendoswitchcopy-3cd9cdd60586ba2add364533c358d0ec/" class="w-full h-64 rounded-t-lg" frameborder="0"></iframe>
+                    <div class="p-4">
+                        <h3 class="mt-4 text-xl font-semibold text-gray-900">N-Switch</h3>
+                        <p class="mt-2 text-gray-500">Play your favorite games anytime, anywhere.</p>
+                    </div>
+                </div>
+    
+                <div class="text-center bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <iframe src="https://my.spline.design/polaroidgocopy-54fc3992fe9b229f84287fb016991235/" class="w-full h-64 rounded-t-lg" frameborder="0"></iframe>
+                    <div class="p-4">
+                        <h3 class="mt-4 text-xl font-semibold text-gray-900">Polaroid</h3>
+                        <p class="mt-2 text-gray-500">Capture your moments instantly with style.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="about" class="bg-gray-900 text-white py-8 mt-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">About Us</h3>
+                    <p class="text-gray-400">We are dedicated to providing the latest technology to enhance your digital lifestyle. Join us on our journey to innovate and inspire.</p>
+                </div>
+    
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#prices" class="text-gray-400 hover:text-white">Products</a></li>
+                        <li><a href="#prices" class="text-gray-400 hover:text-white">Pricing</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">Contact</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <p class="text-gray-400">Email: drandreb.reyes@gmail.com</p>
+                    <p class="text-gray-400">Phone: (+63) 0912345678</p>
+                    <p class="text-gray-400">Address: Caraga State University, Ampayon</p>
+                </div>
+            </div>
+    
+            <div class="mt-8 border-t border-gray-700 pt-4">
+                <p class="text-center text-gray-400 text-sm">&copy; 2024 iPhone Up. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+  </body>
+
+  <script src="index.js"></script>
+</html>
