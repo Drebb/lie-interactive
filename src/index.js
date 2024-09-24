@@ -26,6 +26,7 @@ const muteButton = document.getElementById("muteButton");
 const volumeControl = document.getElementById("volumeControl");
 const controls = document.getElementById("controls");
 const audioElement = document.getElementById('background-music');
+audioElement.volume = 0.10;
 const muteButtond = document.getElementById('muteButtond');
 const muteText = document.getElementById('muteText');
 
